@@ -30,8 +30,8 @@ def database():
         """
         CREATE TABLE IF NOT EXIST EXPENSES(
             ID INTEGER PRIMARY KEY,
-            CATEGORY TEXT NOT NULL,
             AMOUNT REAL NOT NULL,
+            CATEGORY TEXT NOT NULL,
             DESCRIPTION TEXT,
             DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             
