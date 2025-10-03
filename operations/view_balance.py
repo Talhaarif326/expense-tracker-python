@@ -1,5 +1,5 @@
 from database import get_db_connection
-from balance_ops import get_current_balance, set_initial_balance
+from operations.balance_ops import get_current_balance, set_initial_balance
 from utils.validators import balance_check                   
 
 def view_balance():
