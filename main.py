@@ -29,16 +29,19 @@ def main():
                     set_initial_balance()
                     
                 case "2":
-                    view_balance()
+                    result = view_balance()
+                    print(result)
                 
                 case "3":
-                    view_expenses()
+                    result = view_expenses()
+                    print(result)
                 
                 case "4":
                     add_expense()
                 
                 case "5":
-                    get_current_balance()
+                    result = get_current_balance()
+                    print(result)
                 
                 case "6":
                     update_balance()
