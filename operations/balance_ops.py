@@ -11,6 +11,9 @@ def set_initial_balance():
         
         cursor.execute("INSERT INTO balance(BALANCE) VALUES(?)",(initial_balance,))
         
+        conn.commit()
+        conn.close()
+        
         print(f"Balance Set to: {initial_balance}")
     except Exception as e:
         print(f"Error: {e}")
