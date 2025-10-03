@@ -1,5 +1,4 @@
 from database import get_db_connection
-from decimal import Decimal
 
 def add_expense():
     try:
@@ -7,7 +6,7 @@ def add_expense():
         cursor = conn.cursor()
         print("Database Connection Establish ✅✅")
         
-        expense_amount = Decimal(input("Enter Expense Amount: "))
+        expense_amount = float(input("Enter Expense Amount: "))
         expense_category = input("Enter Expense Category: ")
         expense_description = input("Enter Expense Detail: ")
         
