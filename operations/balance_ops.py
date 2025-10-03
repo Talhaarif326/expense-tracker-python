@@ -1,5 +1,4 @@
 from database import get_db_connection
-from decimal import Decimal
 
 def set_initial_balance():
     try:
@@ -8,7 +7,7 @@ def set_initial_balance():
         
         print(f"Database Connection Successfully✅.")
         
-        initial_balance = Decimal(input("Enter Initial Balance: "))
+        initial_balance = float(input("Enter Initial Balance: "))
         
         cursor.execute("INSERT INTO balance(BALANCE) VALUES(?)",(initial_balance,))
         
