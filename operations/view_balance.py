@@ -11,10 +11,13 @@ def view_balance():
             
             balance = get_current_balance()
             
-            return f"Current Balance: {balance}"
+            if balance is not None:
+                return f"✅ Balance set successfully! Current Balance: {balance}"
+            else:
+                return "❌ Failed to set balance. Please try again."
 
         balance = get_current_balance()
 
         return f"Current Balance: {balance}"
     except Exception as e:
-        print("Error: {e}")
+        print(f"Error: {e}")
