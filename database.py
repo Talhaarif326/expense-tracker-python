@@ -20,8 +20,8 @@ def database():
         """
         CREATE TABLE IF NOT EXIST balance(
             ID INTEGER PRIMARY KEY,
-            BALANCE INTEGER REAL DEFAULT=0,
-            LAST UPDATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            BALANCE REAL DEFAULT=0,
+            LAST_UPDATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP
         )
         """
         )
