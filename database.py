@@ -28,12 +28,12 @@ def database():
     
     cursor.execute(
         """
-        CREATE TABLE IF NOT EXIST EXPENSES(
+        CREATE TABLE IF NOT EXISTS EXPENSES(
             ID INTEGER PRIMARY KEY,
             AMOUNT REAL NOT NULL,
             CATEGORY TEXT NOT NULL,
             DESCRIPTION TEXT,
-            DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            EXPENSE_TIME TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             
         )
         """
