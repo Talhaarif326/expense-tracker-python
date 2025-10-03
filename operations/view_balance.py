@@ -1,13 +1,20 @@
 from database import get_db_connection
-from balance_ops import get_current_balance
+from balance_ops import get_current_balance, set_initial_balance
+from utils.validators import balance_check                   
 
 def view_balance():
     
-    conn = get_db_connection()
-    cursor = conn.cursor()
-    
-    balance = get_current_balance()
-    
-    conn.close()
-    
-    return f"Current Balance: {balance}"
+    try:
+        if not balance_check():
+            print("Balance is not set.")
+            set_initial_balance()
+            
+            balance = get_current_balance()
+            
+            return f"Current Balance: {balance}"
+
+        balance = get_current_balance()
+
+        return f"Current Balance: {balance}"
+    except Exception as e:
+        print("Error: {e}")
