@@ -8,12 +8,12 @@ A professional Python-based expense tracking application with beautiful console 
 
 ## 🚀 Features
 
-- 💵 **Balance Management** - Set and track your finances
+- 💵 **Balance Management** - Set and track your finances  
 - 📊 **Expense Tracking** - Add expenses with automatic balance deduction  
-- 🎨 **Beautiful UI** - Professional tables with Tabulate formatting
-- 💾 **Data Persistence** - SQLite database for reliable data storage
-- ✅ **Input Validation** - Prevent overspending and invalid inputs
-- 🏗️ **Modular Architecture** - Clean, maintainable OOP design
+- 🎨 **Beautiful UI** - Professional tables with Tabulate formatting  
+- 💾 **Data Persistence** - SQLite database for reliable data storage  
+- ✅ **Input Validation** - Prevent overspending and invalid inputs  
+- 🏗️ **Modular Architecture** - Clean, maintainable OOP design  
 
 ## 📸 Demo
 
@@ -23,16 +23,18 @@ A professional Python-based expense tracking application with beautiful console 
 │ $1000.00 │
 └───────────────────┘
 
-text
+bash
+Copy code
 
 ## 🛠️ Installation
 
 ### Prerequisites
-- Python 3.11 or higher
-- pip package manager
+- Python 3.11 or higher  
+- pip package manager  
 
 ### Setup
 
+```bash
 # Clone the repository
 git clone https://github.com/Talhaarif326/python-expense-tracker.git
 
@@ -44,46 +46,45 @@ pip install tabulate
 
 # Run the application
 python main.py
+````
+🎯 Usage
+Set Initial Balance – Start by setting your financial balance
 
-**🎯 Usage**
-Set Initial Balance - Start by setting your financial balance
+Add Expenses – Record expenses (automatically deducts from balance)
 
-Add Expenses - Record expenses (automatically deducts from balance)
+View Balance – Check current available funds
 
-View Balance - Check current available funds
+View Expenses – Review spending history in beautiful tables
 
-View Expenses - Review spending history in beautiful tables
+Exit – Close the application
 
-Exit - Close the application
-
-**🏗️ Project Structure**
-
+🏗️ Project Structure
+bash
+Copy code
 expense_tracker_project/
 ├── main.py                 # Application entry point
-├── database.py            # Database connection & setup
-├── models.py              # OOP models (Balance, Expenses)
-├── operations/            # Business logic
-│   ├── add_expense.py     # Add expense functionality
-│   ├── balance_ops.py     # Balance operations
-│   ├── view_balance.py    # Balance display
-│   └── view_expenses.py   # Expenses display
-├── utils/                 # Helper functions
-│   └── validators.py      # Input validation
-
-**💻 Technology Stack**
+├── database.py             # Database connection & setup
+├── models.py               # OOP models (Balance, Expenses)
+├── operations/             # Business logic
+│   ├── add_expense.py      # Add expense functionality
+│   ├── balance_ops.py      # Balance operations
+│   ├── view_balance.py     # Balance display
+│   └── view_expenses.py    # Expenses display
+├── utils/                  # Helper functions
+│   └── validators.py       # Input validation
+💻 Technology Stack
 Backend: Python 3.11
 
 Database: SQLite
 
-UI: Tabulate for beautiful console tables
+UI: Tabulate (for beautiful console tables)
 
 Architecture: Object-Oriented Programming (OOP)
 
-Error Handling: Comprehensive try-catch blocks
+Error Handling: Comprehensive try-except blocks
 
-**🎨 Features in Detail**
-
-**Balance Management**
+🎨 Features in Detail
+💵 Balance Management
 Set initial balance with professional formatting
 
 Real-time balance updates with each expense
@@ -92,7 +93,7 @@ Automatic deduction validation
 
 Persistent storage across sessions
 
-**Expense Tracking**
+📊 Expense Tracking
 Categorized expense recording
 
 Timestamped entries
@@ -101,7 +102,7 @@ Beautiful tabular display
 
 Full CRUD operations
 
-**User Experience**
+🧭 User Experience
 Intuitive menu system
 
 Clear error messages
@@ -110,7 +111,7 @@ Professional data presentation
 
 Input validation and safeguards
 
-**🤝 Contributing**
+🤝 Contributing
 Fork the project
 
 Create your feature branch (git checkout -b feature/AmazingFeature)
@@ -121,8 +122,6 @@ Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-**👨‍💻 Developer**
+👨‍💻 Developer
 Talha Arif
-
 GitHub: @Talhaarif326
-
