@@ -15,7 +15,7 @@ def set_initial_balance():
         conn.commit()
         
         
-        print(tabulate([[initial_balance]], headers=["Balance"]))
+        print(tabulate([[initial_balance]], headers=["Balance"], tablefmt="grid"))
         conn.close()
         
     except Exception as e:
@@ -32,7 +32,7 @@ def get_current_balance():
         
         conn.close()
         
-        return tabulate([[current_balance]], headers=["Balance"])
+        return tabulate([[current_balance]], headers=["Balance"], tablefmt="grid")
 
     except Exception as e:
         print(f"Error: {e}")
