@@ -20,6 +20,7 @@ def add_expense():
         # Step 4: Validate if user has sufficient funds
         if expense_amount > current_balance:
             print(f"Insufficient Funds. Current Balance: {current_balance} ")
+            conn.close()
             return
         
         # Step 5: Calculate new balance after expense deduction
