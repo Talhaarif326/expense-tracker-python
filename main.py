@@ -1,10 +1,9 @@
-from database import get_db_connection, database
+from database import database
 from models import Balance, Expenses
 from operations.add_expense import add_expense
-from operations.balance_ops import set_initial_balance, get_current_balance, update_balance
+from operations.balance_ops import set_initial_balance
 from operations.view_balance import view_balance
 from operations.view_expenses import view_expenses
-from utils.validators import balance_check, expense_check
 
 
 def main():
