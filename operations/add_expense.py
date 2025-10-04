@@ -1,5 +1,4 @@
 from database import get_db_connection
-from operations.balance_ops import get_current_balance, update_balance
 
 def add_expense():
     try:
