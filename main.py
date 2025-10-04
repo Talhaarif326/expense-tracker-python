@@ -17,9 +17,7 @@ def main():
             print(f"2. View Balance. ")
             print(f"3. View Expenses. ")
             print(f"4. Add Expenses. ")
-            print(f"5. View Current Balance. ")
-            print(f"6. Update Balance.")
-            print(f"7. Exit App.")
+            print(f"5. Exit App.")
             
             choice = input("Enter your choice: ")
             
@@ -38,15 +36,8 @@ def main():
                 
                 case "4":
                     add_expense()
-                
+                                    
                 case "5":
-                    result = get_current_balance()
-                    print(result)
-                
-                case "6":
-                    update_balance()
-                
-                case "7":
                     break
                     
                 case _:
