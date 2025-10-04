@@ -1,4 +1,5 @@
 from database import get_db_connection
+from tabulate import tabulate
 
 def set_initial_balance():
     try:
@@ -14,7 +15,7 @@ def set_initial_balance():
         conn.commit()
         
         
-        print(f"Balance Set to: {initial_balance}")
+        print(tabulate([[initial_balance]], headers=["Balance"]))
         conn.close()
         
     except Exception as e:
@@ -26,12 +27,12 @@ def get_current_balance():
         cursor = conn.cursor()
         
         cursor.execute("SELECT BALANCE FROM balance ORDER BY ID DESC LIMIT 1")
-        current_balance = cursor.fetchone()
-        
+        result = cursor.fetchone()
+        current_balance = result['BALANCE']
         
         conn.close()
         
-        return current_balance['BALANCE']
+        return tabulate([[current_balance]], headers=["Balance"])
 
     except Exception as e:
         print(f"Error: {e}")
