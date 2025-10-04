@@ -1,5 +1,6 @@
 from database import get_db_connection
 from utils.validators import expense_check
+from tabulate import tabulate
 
 def view_expenses():
     try:
@@ -13,9 +14,8 @@ def view_expenses():
         
         result = cursor.fetchall()
         
+        print(tabulate(result, headers=["ID", "AMOUNT", "CATEGORY", "DESCRIPTION", "DATE"]))
         conn.close()
-        
-        return result
     
     except Exception as e:
         print(f"Error: {e}")
