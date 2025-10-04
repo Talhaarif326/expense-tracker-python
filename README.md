@@ -72,7 +72,7 @@ expense_tracker_project/
 │   └── view_expenses.py    # Expenses display
 ├── utils/                  # Helper functions
 │   └── validators.py       # Input validation
-💻 Technology Stack
+**💻 Technology Stack**
 Backend: Python 3.11
 
 Database: SQLite
@@ -83,8 +83,8 @@ Architecture: Object-Oriented Programming (OOP)
 
 Error Handling: Comprehensive try-except blocks
 
-🎨 Features in Detail
-💵 Balance Management
+**🎨 Features in Detail**
+**💵 Balance Management**
 Set initial balance with professional formatting
 
 Real-time balance updates with each expense
@@ -93,7 +93,7 @@ Automatic deduction validation
 
 Persistent storage across sessions
 
-📊 Expense Tracking
+**📊 Expense Tracking**
 Categorized expense recording
 
 Timestamped entries
@@ -102,7 +102,7 @@ Beautiful tabular display
 
 Full CRUD operations
 
-🧭 User Experience
+**🧭 User Experience**
 Intuitive menu system
 
 Clear error messages
@@ -111,7 +111,8 @@ Professional data presentation
 
 Input validation and safeguards
 
-🤝 Contributing
+**🤝 Contributing**
+
 Fork the project
 
 Create your feature branch (git checkout -b feature/AmazingFeature)
@@ -122,6 +123,7 @@ Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-👨‍💻 Developer
+**👨‍💻 Developer**
 Talha Arif
 GitHub: @Talhaarif326
+
