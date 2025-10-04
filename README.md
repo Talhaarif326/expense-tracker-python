@@ -16,11 +16,14 @@ A professional Python-based expense tracking application with beautiful console 
 - 🏗️ **Modular Architecture** - Clean, maintainable OOP design
 
 ## 📸 Demo
+
 ┌───────────────────┐
 │ 💰 CURRENT BALANCE │
 ├───────────────────┤
 │ $1000.00 │
 └───────────────────┘
+
+text
 
 ## 🛠️ Installation
 
@@ -29,6 +32,7 @@ A professional Python-based expense tracking application with beautiful console 
 - pip package manager
 
 ### Setup
+
 # Clone the repository
 git clone https://github.com/Talhaarif326/python-expense-tracker.git
 
@@ -41,7 +45,7 @@ pip install tabulate
 # Run the application
 python main.py
 
-###🎯 Usage
+**🎯 Usage**
 Set Initial Balance - Start by setting your financial balance
 
 Add Expenses - Record expenses (automatically deducts from balance)
@@ -52,8 +56,8 @@ View Expenses - Review spending history in beautiful tables
 
 Exit - Close the application
 
-###🏗️ Project Structure
-text
+**🏗️ Project Structure**
+
 expense_tracker_project/
 ├── main.py                 # Application entry point
 ├── database.py            # Database connection & setup
@@ -65,9 +69,8 @@ expense_tracker_project/
 │   └── view_expenses.py   # Expenses display
 ├── utils/                 # Helper functions
 │   └── validators.py      # Input validation
-└── requirements.txt       # Dependencies
 
-###💻 Technology Stack
+**💻 Technology Stack**
 Backend: Python 3.11
 
 Database: SQLite
@@ -78,7 +81,8 @@ Architecture: Object-Oriented Programming (OOP)
 
 Error Handling: Comprehensive try-catch blocks
 
-###🎨 Features in Detail
+**🎨 Features in Detail**
+
 **Balance Management**
 Set initial balance with professional formatting
 
@@ -88,7 +92,7 @@ Automatic deduction validation
 
 Persistent storage across sessions
 
-###Expense Tracking
+**Expense Tracking**
 Categorized expense recording
 
 Timestamped entries
@@ -97,7 +101,7 @@ Beautiful tabular display
 
 Full CRUD operations
 
-###User Experience
+**User Experience**
 Intuitive menu system
 
 Clear error messages
@@ -106,8 +110,7 @@ Professional data presentation
 
 Input validation and safeguards
 
-###🤝 Contributing
-
+**🤝 Contributing**
 Fork the project
 
 Create your feature branch (git checkout -b feature/AmazingFeature)
@@ -118,7 +121,7 @@ Push to the branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-###👨‍💻 Developer
+**👨‍💻 Developer**
 Talha Arif
 
 GitHub: @Talhaarif326
