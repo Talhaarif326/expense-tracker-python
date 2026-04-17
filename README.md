@@ -1,129 +1,143 @@
-# Expense Tracker 💰
+<div align="center">
 
-A professional Python-based expense tracking application with beautiful console UI and SQLite database.
+# 💰 Expense Tracker
 
-![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
-![SQLite](https://img.shields.io/badge/SQLite-Database-green.svg)
-![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)
+> A Python CLI expense tracking app with balance management, categorized expenses, and SQLite persistence.
 
-## 🚀 Features
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)](https://python.org)
+[![SQLite](https://img.shields.io/badge/Storage-SQLite-003B57?logo=sqlite)](https://sqlite.org)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-- 💵 **Balance Management** - Set and track your finances  
-- 📊 **Expense Tracking** - Add expenses with automatic balance deduction  
-- 🎨 **Beautiful UI** - Professional tables with Tabulate formatting  
-- 💾 **Data Persistence** - SQLite database for reliable data storage  
-- ✅ **Input Validation** - Prevent overspending and invalid inputs  
-- 🏗️ **Modular Architecture** - Clean, maintainable OOP design  
+</div>
 
-## 📸 Demo
+---
 
-┌───────────────────┐
-│ 💰 CURRENT BALANCE │
-├───────────────────┤
-│ $1000.00 │
-└───────────────────┘
+## 📖 Overview
 
-bash
-Copy code
+**Expense Tracker** is a command-line application that helps you manage your personal finances. Set an initial balance, log categorized expenses, and view your spending history — all stored persistently in a local SQLite database.
 
-## 🛠️ Installation
+The app validates your balance before every expense, prevents overspending, and displays data in clean tabulated format.
+
+**Built with:** Python · SQLite3 · Tabulate
+
+---
+
+## ✨ Features
+
+- 💳 **Set Initial Balance** — Initialize your wallet balance before tracking
+- 👁️ **View Balance** — See your current remaining balance at any time
+- 📋 **View Expenses** — Browse all logged expenses in a formatted table
+- ➕ **Add Expense** — Log an expense with amount, category, and description
+- 🛡️ **Insufficient Funds Guard** — Blocks expenses that exceed your current balance
+- 🗄️ **SQLite Persistence** — All data stored locally and survives app restarts
+- ✅ **Smart Validation** — Checks if balance/expenses exist before any operation
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Purpose |
+|---|---|
+| Python 3.10+ | Core language |
+| sqlite3 (stdlib) | Local database — balance + expenses tables |
+| tabulate | Formatted table output for expenses and balance |
+
+---
+
+## 🚀 Setup
 
 ### Prerequisites
-- Python 3.11 or higher  
-- pip package manager  
 
-### Setup
+- Python 3.10 or higher
+
+### Install & Run
 
 ```bash
-# Clone the repository
-git clone https://github.com/Talhaarif326/python-expense-tracker.git
+# Clone the repo
+git clone https://github.com/Talhaarif326/expense-tracker-python.git
 
-# Navigate to project directory
-cd python-expense-tracker
+cd expense-tracker-python
 
 # Install dependencies
 pip install tabulate
 
-# Run the application
+# Run the app
 python main.py
-````
-🎯 Usage
-Set Initial Balance – Start by setting your financial balance
+```
 
-Add Expenses – Record expenses (automatically deducts from balance)
+---
 
-View Balance – Check current available funds
+## 🏗️ Project Structure
 
-View Expenses – Review spending history in beautiful tables
+```
+expense-tracker-python/
+├── main.py                       # Entry point — menu loop and routing
+├── database.py                   # SQLite connection + table initialization
+├── models.py                     # Balance and Expenses data classes
+├── expense_tracker.db            # Auto-generated SQLite database
+├── operations/
+│   ├── add_expense.py            # Log new expense + deduct from balance
+│   ├── balance_ops.py            # Set initial balance / get current balance
+│   ├── view_balance.py           # Display balance (auto-prompts if not set)
+│   └── view_expenses.py          # Display all expenses in tabulate grid
+└── utils/
+    └── validators.py             # balance_check() and expense_check() guards
+```
 
-Exit – Close the application
+---
 
-🏗️ Project Structure
-bash
-Copy code
-expense_tracker_project/
-├── main.py                 # Application entry point
-├── database.py             # Database connection & setup
-├── models.py               # OOP models (Balance, Expenses)
-├── operations/             # Business logic
-│   ├── add_expense.py      # Add expense functionality
-│   ├── balance_ops.py      # Balance operations
-│   ├── view_balance.py     # Balance display
-│   └── view_expenses.py    # Expenses display
-├── utils/                  # Helper functions
-│   └── validators.py       # Input validation
-**💻 Technology Stack**
-Backend: Python 3.11
+## 📋 Usage
 
-Database: SQLite
+```
+ Welcome
+ Select From the below Menu
 
-UI: Tabulate (for beautiful console tables)
+ Ξ Menu
+1. Set Initial Balance
+2. View Balance.
+3. View Expenses.
+4. Add Expenses.
+5. Exit App.
 
-Architecture: Object-Oriented Programming (OOP)
+Enter your choice:
+```
 
-Error Handling: Comprehensive try-except blocks
+**Adding an expense:**
+```
+Enter Expense Amount: 500
+Enter Expense Category: Food
+Enter Expense Detail: Dinner at restaurant
 
-**🎨 Features in Detail**
-**💵 Balance Management**
-Set initial balance with professional formatting
+Balance Updated successfully ✅
+Expense Added Successfully ✅
+Remaining Balance: 4500
+```
 
-Real-time balance updates with each expense
+---
 
-Automatic deduction validation
+## 📝 Changelog
 
-Persistent storage across sessions
+### v1.0.0
+- ✨ Initial release
+- Balance management with SQLite persistence
+- Categorized expense logging
+- Insufficient funds validation
+- Tabulate-formatted output
 
-**📊 Expense Tracking**
-Categorized expense recording
+---
 
-Timestamped entries
+## 📄 License
 
-Beautiful tabular display
+This project is licensed under the **MIT License**.
 
-Full CRUD operations
+---
 
-**🧭 User Experience**
-Intuitive menu system
+## 🙌 Credits
 
-Clear error messages
+- Built by [Talhaarif326](https://github.com/Talhaarif326)
 
-Professional data presentation
+---
 
-Input validation and safeguards
-
-**🤝 Contributing**
-
-Fork the project
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-**👨‍💻 Developer**
-Talha Arif
-GitHub: @Talhaarif326
-
+<div align="center">
+  <sub>Made with ❤️ using Python</sub>
+</div>
